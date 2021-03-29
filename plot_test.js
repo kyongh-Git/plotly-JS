@@ -35,6 +35,21 @@ var interval = setInterval(function() {
   if(cnt === 100) clearInterval(interval);
 }, 500);
 
+TESTER3 = document.getElementById('tester3');
+
+var data = [{
+  values: [19, 26, 55],
+  labels: ['Residential', 'Non-Residential', 'Utility'],
+  type: 'pie'
+}];
+
+var layout = {
+  height: 400,
+  width: 500
+};
+
+Plotly.newPlot(TESTER3, data, layout);
+
 
 });
 
