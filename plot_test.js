@@ -27,7 +27,7 @@ Plotly.plot(TESTER2, [{
 
 var cnt = 0;
 var interval = setInterval(function() {
-  Plotly.extendTraces('graph', {
+  Plotly.extendTraces(TESTER2, {
     y: [[rand()], [rand()]]
   }, [0, 1])
 
